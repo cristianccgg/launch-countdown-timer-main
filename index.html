@@ -1,31 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Launch countdown timer</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/styles.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Launch countdown timer</title>
 
-  We're launching soon
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main
+      class="relative tracking-widest font-redHat bg-6-Very-dark-mostly-black-blue text-white max-w-screen-xl min-h-screen mx-auto flex flex-col justify-center items-center"
+    >
+      <span><img src="/images/bg-stars.svg" alt="bg-stars" /></span>
+      <div
+        class="flex flex-col items-center justify-center gap-20 px-4 w-full h-96 absolute top-0 md:top-20"
+      >
+        <h1 class="text-2xl text-center font-semibold px-5 md:text-4xl">
+          WE'RE LAUNCHING SOON
+        </h1>
+        <div class="grid grid-cols-4 gap-4 md:gap-10">
+          <div class="flex flex-col items-center space-y-4">
+            <div
+              class="custom-border relative bg-4-Dark-desaturated-blue rounded-lg w-full h-16 flex justify-center items-center md:p-4 md:h-32"
+            >
+              <span
+                class="bg-5-Very-dark-blue opacity-45 w-full h-[1px] absolute"
+              ></span>
+              <h1
+                id="days-div"
+                class="text-2-Soft-red text-3xl font-black md:text-6xl"
+              >
+                08
+              </h1>
+            </div>
+            <h2 class="text-1-Grayish-blue text-xs font-light md:text-lg">
+              DAYS
+            </h2>
+          </div>
 
-  Days
-  Hours
-  Minutes
-  Seconds
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+          <div class="flex flex-col items-center space-y-4">
+            <div
+              class="custom-border relative bg-4-Dark-desaturated-blue rounded-lg w-full h-16 flex justify-center items-center md:p-4 md:h-32"
+            >
+              <span
+                class="bg-5-Very-dark-blue opacity-45 w-full h-[1px] absolute"
+              ></span>
+              <h1
+                id="hours-div"
+                class="text-2-Soft-red text-3xl font-black md:text-6xl"
+              >
+                23
+              </h1>
+            </div>
+            <h2 class="text-1-Grayish-blue text-xs font-light md:text-lg">
+              HOURS
+            </h2>
+          </div>
+          <div class="flex flex-col items-center space-y-4">
+            <div
+              class="custom-border relative bg-4-Dark-desaturated-blue rounded-lg w-full h-16 flex justify-center items-center md:p-4 md:h-32"
+            >
+              <span
+                class="bg-5-Very-dark-blue opacity-45 w-full h-[1px] absolute"
+              ></span>
+              <h1
+                id="minutes-div"
+                class="text-2-Soft-red text-3xl font-black md:text-6xl"
+              >
+                55
+              </h1>
+            </div>
+            <h2 class="text-1-Grayish-blue text-xs font-light md:text-lg">
+              MINUTES
+            </h2>
+          </div>
+          <div class="flex flex-col items-center space-y-4">
+            <div
+              class="custom-border relative bg-4-Dark-desaturated-blue rounded-lg w-full h-16 flex justify-center items-center md:p-4 md:h-32"
+            >
+              <span
+                class="bg-5-Very-dark-blue opacity-45 w-full h-[1px] absolute"
+              ></span>
+              <h1
+                id="seconds-div"
+                class="text-2-Soft-red text-3xl font-black md:text-6xl"
+              >
+                41
+              </h1>
+            </div>
+            <h2 class="text-1-Grayish-blue text-xs font-light md:text-lg">
+              SECONDS
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <footer
+        class="absolute bg-hills bg-fill bg-no-repeat bottom-0 left-0 w-full h-44"
+      >
+        <div
+          class="grid grid-cols-3 mx-auto w-fit h-full items-center justify-center gap-5"
+        >
+          <div
+            class="col-auto icon bg-icon-facebook bg-contain bg-no-repeat w-8 h-8"
+          ></div>
+          <div
+            class="col-auto icon bg-icon-pinterest bg-contain bg-no-repeat w-8 h-8"
+          ></div>
+          <div
+            class="col-auto icon bg-icon-instagram bg-contain bg-no-repeat w-8 h-8"
+          ></div>
+        </div>
+      </footer>
+      <a
+        href="https://www.frontendmentor.io/talent-profile/preview"
+        class="text-white absolute bottom-0"
+        >Coded by <span class="text-2-Soft-red">Cristian Gutierrez</span></a
+      >
+    </main>
+  </body>
+  <script src="/main.js"></script>
 </html>

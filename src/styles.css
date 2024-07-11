@@ -1,0 +1,21 @@
+.custom-border::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: hsl(234, 17%, 12%);
+  border-radius: 50%;
+  position: absolute;
+  left: -5px;
+}
+
+.custom-border::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: hsl(234, 17%, 12%);
+  border-radius: 50%;
+  position: absolute;
+  right: -5px;
+}
